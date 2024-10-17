@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Product</h1>
+        <div class="product">
+            <input type="radio" id="one-pair" name="product" value="200" data-original-price="200" data-discount="0">
+            <label for="one-pair">
+                <div class="product-details">
+                    <h2>1 Pair of Shoes</h2>
+                    <div class="price-section">
+                        <p><strong>Price:</strong> $200</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div class="product">
+            <input type="radio" id="two-pairs" name="product" value="350" data-original-price="500" data-discount="30%">
+            <label for="two-pairs">
+                <div class="product-details">
+                    <h2>2 Pairs of Shoes</h2>
+                    <div class="price-section">
+                        <p><strong>Original Price:</strong> $500</p>
+                        <p><strong>Discount:</strong> 30% Off</p>
+                        <p><strong>Price After Discount:</strong> $350</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+      
+        <div class="product">
+            <input type="radio" id="three-pairs" name="product" value="450" data-original-price="700" data-discount="35%">
+            <label for="three-pairs">
+                <div class="product-details">
+                    <h2>3 Pairs of Shoes</h2>
+                    <div class="price-section">
+                        <p><strong>Original Price:</strong> $700</p>
+                        <p><strong>Discount:</strong> 35% Off</p>
+                        <p><strong>Price After Discount:</strong> $450</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        
+        <div class="total-section">
+            <h3>Total Amount: $<span id="total-amount">0</span></h3>
+            <p class="shipping-tag">Two Days Free Shipping</p>
+            <button id="add-to-cart-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
